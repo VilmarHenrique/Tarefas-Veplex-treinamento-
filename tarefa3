@@ -1,0 +1,9 @@
+<?php
+system("clear");
+
+    $num = readline("entre com um número:");
+
+  for($i = 0; $i <= 10; $i++){
+    echo "{$num} * {$i} = " . ($num * $i) . "\n";
+  }
+?>
