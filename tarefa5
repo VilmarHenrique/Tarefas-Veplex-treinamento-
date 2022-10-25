@@ -1,0 +1,27 @@
+<?php
+
+
+$n1 = readline("insira um número:");
+$n2 = readline("insira um número:");
+$n3 = readline("insira um número:");
+$n4 = readline("insira um número:");
+$n5 = readline("insira um número:");
+$n6 = readline("insira um número:");
+$n7 = readline("insira um número:");
+$n8 = readline("insira um número:");
+$n9 = readline("insira um número:");
+$n10 = readline("insira um número:");
+
+
+$arr = array($n1, $n2, $n3, $n4, $n5, $n6, $n7, $n8, $n9, $n10);
+foreach ($arr as $number) {
+    if($number > 30 && $number < 90) {
+   echo $number;
+}
+}
+
+?>
+
+
+
+
