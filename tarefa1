@@ -1,0 +1,15 @@
+<?php
+
+$gustavo = 1.40;
+$juliano = 1.10;
+$tempo = 0;
+ 
+    for ($tempo = 0;$juliano <= $gustavo; $tempo++){
+        $juliano += 0.17;
+        $gustavo += 0.08;
+    }
+
+    echo "Demorará $tempo anos, para que juliano ultrapasse gustavo.\n
+    Assim, Juliano terá 1,78 metros de altura e Gustavo 1,72." 
+    
+?>
