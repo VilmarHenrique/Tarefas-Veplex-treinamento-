@@ -1,0 +1,9 @@
+<?php
+system ("clear");
+$arr = [52, 15, 17, 25, 39, 48, 63, 72, 10];
+
+for ( $i= 0;  $i< count($arr); $i++) {
+    if($arr[$i] >= 50 || $arr[$i] <= 18){
+        echo "\n'$arr[$i]'\n";
+    } 
+}
