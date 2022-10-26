@@ -1,0 +1,21 @@
+<?php
+$valor = readline("insira o preço do carro:");
+echo "\nParcelas: juros:\n06 / 03%\n12 / 06%\n18 / 09%\n36 / 18%\n48 / 24%\n\n";
+$qtsParcelas = readline("quer parcelar em quantas vezes meu patrão? ");
+if ($qtsParcelas <=6) {
+    $total = ($valor + ($valor * 0.03)); 
+} elseif ($qtsParcelas <= 12) {
+    $total = ($valor + ($valor * 0.06));
+} elseif ($qtsParcelas <= 18){
+    $total = ($valor + ($valor * 0.09));
+} elseif ($qtsParcelas <= 24){
+    $total = ($valor + ($valor * 0.12));
+} elseif ($qtsParcelas <= 36){
+    $total = ($valor + ($valor * 0.18));
+} elseif ($qtsParcelas <= 48){
+    $total = ($valor + ($valor * 0.24));   
+} else {
+    $total = "Ai você quebra a firma!";
+}
+echo "Valor inicial: $valor\nN° de parcelas: $qtsParcelas\nTotal com juros: $total\n";
+?>
