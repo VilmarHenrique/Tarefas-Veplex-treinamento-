@@ -1,0 +1,15 @@
+<?php
+$itens = array(
+    "Camiseta" => 125.99,
+    "Calça" => 254.30,
+    "Tênis" => 458.99,
+    "Boné" => 35,
+    "Relógio" => 50
+);
+
+$maiorValor = current(array_keys($itens, max($itens)));
+
+echo "Total:".array_sum($itens); 
+echo "O maior valor é do item: ".$maiorValor;
+
+?>
