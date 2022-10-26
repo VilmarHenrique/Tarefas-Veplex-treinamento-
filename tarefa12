@@ -1,0 +1,10 @@
+<?php
+system("clear");
+$arr = [2, 5, 7, 9, 12, 16, 19, 23, 29, 32];
+for ($i= 0; $i < count($arr); $i++) {
+    if($arr[$i] % 2 == 0){
+        echo "\n $arr[$i] é um número par\n";
+    } else {
+        echo "\n $arr[$i] é um número ímpar\n";
+    }
+}
