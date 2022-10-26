@@ -1,0 +1,36 @@
+<?php
+system("clear");
+
+$n1 = readline("Insira um valor para a calculadora executar a conta: ");
+$n2 = readline("Segundo valor: ");
+$calcular = readline("Agora escolha o sinal do operador que você deseja que a calculadora PHP realize a conta. Exemplo: +,-,**,*,%,/.: ");
+$total = 0;
+
+switch ($calcular){
+ case "-":
+     $total = $n1 - $n2;
+     echo "<\n Total: $total \n";
+     break;
+ case "+":
+     $total = $n1 + $n2;
+     echo "\n Total: $total \n";
+     break;
+ case "**":
+     $total = $n1 ** $n2;
+     echo "\n Total: $total \n";
+     break;
+ case "*":
+     $total = $n1 * $n2;
+     echo "\n Total: $total \n";
+     break;
+ case "/":
+     $total = $n1 / $n2;
+     echo "\n Total: $total \n";
+     break;
+ case "%":
+     $total = $n1 % $n2;
+     echo "\n Total: $total \n";
+     break;
+  default:
+ echo "\nInsira um valor existente!!\n";
+}
