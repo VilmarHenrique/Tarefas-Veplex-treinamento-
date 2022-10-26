@@ -1,0 +1,13 @@
+<?php
+$numero = readline("Insira qual sequência de Fibbonacci você deseja: ");
+$dois_antes = 0;
+$antes = 1;
+$contador = $numero;
+echo "0\n1\n";
+for ($i = 0; $i < $contador; $i++) {
+    $numero = $antes + $dois_antes;
+    echo "$numero\n";
+    $dois_antes = $antes;
+    $antes = $numero;
+}
+?>
