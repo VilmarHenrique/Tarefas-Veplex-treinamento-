@@ -1,0 +1,23 @@
+<?php 
+system("clear");
+$dataNascimento = readline("Por favor, informe sua data de nascimento dd-mm-aaaa: ");
+$dataAtual = new DateTime("Y");
+
+$nasceu = new DateTime("$dataNascimento");
+
+$diferença = $dataAtual->diff($nasceu);
+
+$validar18anos = new DateTime("Y");
+$validar18anos->sub(new DateInterval("P18Y"));
+
+$conta = $validar18anos->diff($nasceu); 
+$faltamAnos = $conta->format("%y"); $ano = "anos";
+$faltamMeses = $conta->format("%m"); $mes = "meses";
+$faltamDias = $conta->format("%d"); $dia = "dias";
+
+if ($diferença->y >= 18) {
+    echo "De acordo com o sistema você está Apto(a), para tirar a carteira de motorista.\n";
+} elseif ($diferença->y < 18) {
+    echo "Faltam $faltamAnos $ano, $faltamMeses $mes e $faltamDias $dia para você poder retirar sua carteira de motorista.\n";
+}
+?>
